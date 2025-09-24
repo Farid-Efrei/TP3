@@ -1,0 +1,7 @@
+[
+  { "id": "ok1", "path": "fixtures/app.log", "type": "text" },
+  { "id": "empty1", "path": "fixtures/empty.log", "type": "text" },
+  { "id": "parseBad", "path": "fixtures/corrupted.log", "type": "text" },
+  { "id": "isDir", "path": "fixtures/somedir", "type": "text" },
+  { "id": "notFound", "path": "fixtures/missing.log", "type": "text" }
+]

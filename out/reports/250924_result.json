@@ -1,0 +1,37 @@
+[
+  {
+    "log_id": "empty1",
+    "file_path": "fixtures/empty.log",
+    "status": "OK",
+    "message": "Fichier vide (Aucune donnée) - OK ",
+    "error_details": ""
+  },
+  {
+    "log_id": "ok1",
+    "file_path": "fixtures/app.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès ! Youhou !",
+    "error_details": ""
+  },
+  {
+    "log_id": "isDir",
+    "file_path": "fixtures/somedir",
+    "status": "FAILED",
+    "message": "Chemin invalide (répertoire)",
+    "error_details": "file access error on fixtures/somedir: c'est un répertoire"
+  },
+  {
+    "log_id": "notFound",
+    "file_path": "fixtures/missing.log",
+    "status": "FAILED",
+    "message": "Fichier introuvable ou illisible",
+    "error_details": "file access error on fixtures/missing.log: GetFileAttributesEx fixtures/missing.log: The system cannot find the file specified."
+  },
+  {
+    "log_id": "parseBad",
+    "file_path": "fixtures/corrupted.log",
+    "status": "FAILED",
+    "message": "Erreur de parsing",
+    "error_details": "parse error: fixtures/corrupted.log: fichier corrompu détecté"
+  }
+]
