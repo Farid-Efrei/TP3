@@ -1,0 +1,44 @@
+[
+  {
+    "log_id": "db-server-3",
+    "file_path": "test_logs/mysql_error.log",
+    "status": "FAILED",
+    "message": "Fichier introuvable ou illisible",
+    "error_details": "file access error on test_logs/mysql_error.log: GetFileAttributesEx test_logs/mysql_error.log: The system cannot find the file specified."
+  },
+  {
+    "log_id": "empty-log",
+    "file_path": "test_logs/empty.log",
+    "status": "OK",
+    "message": "Fichier vide (Aucune donnée) - OK ",
+    "error_details": ""
+  },
+  {
+    "log_id": "corrupted-log",
+    "file_path": "test_logs/corrupted.log",
+    "status": "FAILED",
+    "message": "Erreur de parsing",
+    "error_details": "parse error: test_logs/corrupted.log: fichier corrompu détecté"
+  },
+  {
+    "log_id": "web-server-1",
+    "file_path": "test_logs/access.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès ! Youhou !",
+    "error_details": ""
+  },
+  {
+    "log_id": "invalid-path",
+    "file_path": "/non/existent/log.log",
+    "status": "FAILED",
+    "message": "Fichier introuvable ou illisible",
+    "error_details": "file access error on /non/existent/log.log: GetFileAttributesEx /non/existent/log.log: The system cannot find the path specified."
+  },
+  {
+    "log_id": "app-backend-2",
+    "file_path": "test_logs/errors.log",
+    "status": "OK",
+    "message": "Analyse terminée avec succès ! Youhou !",
+    "error_details": ""
+  }
+]
